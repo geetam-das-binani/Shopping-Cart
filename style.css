@@ -28,23 +28,24 @@ img {
     font-weight: bolder;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-.navbar .cart {
+.navbar .cart{
     position: relative;
+
+}
+.navbar .cart .cart-icon {
     padding: .5rem;
+    font-size: 1.5rem;
+   
 }
 
-.navbar .cart li {
-    list-style: none;
-}
+.navbar .cart .CartAmount {
+ position: absolute;
+    top: -28%;
+    left: 68%;
+    color: red;
+    font-weight: bolder;
 
-.navbar .CartAmount {
-
-    position: absolute;
-    top: 0;
-    right: -5%;
-
-}
+   }
 
 .navbar a {
     text-decoration: none;
@@ -88,7 +89,7 @@ img {
 
 }
 
- .buttons {
+.buttons {
     display: flex;
     gap: .1rem;
 }
@@ -109,7 +110,9 @@ input:hover {
 }
 
 /* styles rules for buttons  */
-.HomeBtn,.checkout,.removeall {
+.HomeBtn,
+.checkout,
+.removeall {
 
     padding: .2rem;
     margin-top: .2rem;
@@ -117,12 +120,14 @@ input:hover {
     background: black;
     border-radius: .5rem;
 }
-.checkout{
+
+.checkout {
 
     background: green;
 
 }
-.removeall{
+
+.removeall {
     background: red;
 }
 
@@ -141,6 +146,7 @@ input:hover {
 
 
 }
+
 /* style rule for cart items inside shopping cart */
 
 .cart-item {
@@ -150,6 +156,7 @@ input:hover {
 
 
 }
+
 .cart-item img {
     width: 42%;
     aspect-ratio: .5/.5;
@@ -165,11 +172,12 @@ input:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  margin-top: .5rem;
+    margin-top: .5rem;
 
 
 
 }
+
 .title-price {
     display: flex;
     align-items: center;
@@ -177,19 +185,22 @@ input:hover {
     gap: .5rem;
 
 }
-.cart-item-price{
-    background:#212529;
+
+.cart-item-price {
+    background: #212529;
     color: white;
     padding: .2rem;
     border-radius: .5rem;
 }
-.cart-buttons{
+
+.cart-buttons {
     display: flex;
     margin-top: 1.3rem;
     margin-left: .5rem;
     gap: .2rem;
 }
-.cart-item .details h3{
+
+.cart-item .details h3 {
     margin-left: .5rem;
     margin-top: .5rem;
 }
@@ -204,9 +215,10 @@ input:hover {
     /* style rule for shopping cart  */
     .shopping-cart {
 
-        grid-template-columns: repeat(1,20rem);
-}
-/* style rule for cart items inside shopping cart */
+        grid-template-columns: repeat(1, 20rem);
+    }
+
+    /* style rule for cart items inside shopping cart */
     .cart-item img {
         width: 40%;
         aspect-ratio: .5/.5;

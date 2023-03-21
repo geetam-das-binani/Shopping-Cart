@@ -113,7 +113,7 @@ let ClearCart = () => {
 
 }
 let TotalAmount = () => {
-    if (basket.lenght !== 0) {
+    if (basket.length !== 0) {
         let amount = basket.map((x) => {
             let { id, item } = x;
             let search = ShopItemsData.find((y) => y.id === id)
@@ -131,6 +131,4 @@ let TotalAmount = () => {
 
 };
 
-
-
-TotalAmount()
+TotalAmount();
